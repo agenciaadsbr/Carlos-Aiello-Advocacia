@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Redirecionando para o WhatsApp | Carlos Aiello Advocacia</title>
+<meta name="theme-color" content="#0F1F38">
+<link rel="icon" href="assets/monogram.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Montserrat:wght@400;500;600&amp;display=swap">
+<style>
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:#0F1F38;color:#C7D0DD;font-family:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;display:flex;align-items:center;justify-content:center;padding:24px;overflow:hidden;position:relative}
+.glow{position:absolute;inset:-20%;background:radial-gradient(closest-side at 70% 20%,rgba(195,144,60,.16),transparent 70%);pointer-events:none}
+.mono{position:absolute;width:560px;max-width:120vw;opacity:.04;pointer-events:none}
+.box{position:relative;max-width:460px;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;animation:fade .5s ease both}
+.logo{width:220px;margin-bottom:18px}
+.ring{position:relative;width:132px;height:132px}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:3}
+.r-bg{stroke:rgba(255,255,255,.1)}
+.r-fg{stroke:#DDB872;stroke-linecap:round;stroke-dasharray:339.3;stroke-dashoffset:339.3;animation:ring 3s linear forwards}
+.ring b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:56px;font-weight:500;color:#fff}
+h1{margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;color:#fff}
+h1 span{color:#DDB872}
+p{margin:0;line-height:1.7}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;margin-top:8px;background:#C3903C;color:#0A1629;border-radius:14px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .3s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px}
+.back{color:#AFBACB;font-size:13.5px;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
+@keyframes ring{to{stroke-dashoffset:0}}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.box,.r-fg{animation:none}.r-fg{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<span class="glow" aria-hidden="true"></span>
+<img class="mono" src="assets/monogram.png" alt="" aria-hidden="true">
+<main class="box">
+<img class="logo" src="assets/logo-light.png" alt="Carlos Aiello Advocacia">
+<div class="ring" aria-hidden="true"><svg viewBox="0 0 120 120"><circle class="r-bg" cx="60" cy="60" r="54"></circle><circle class="r-fg" cx="60" cy="60" r="54"></circle></svg><b id="count">3</b></div>
+<h1 id="titulo">Obrigado pelo contato</h1>
+<p id="texto" aria-live="polite">Estamos te levando para o WhatsApp. Em instantes você poderá apresentar o seu caso para a equipe.</p>
+<a class="btn" id="wa" href="#" rel="noopener">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+Abrir WhatsApp
+</a>
+<a class="back" href="index.html">Voltar para a página</a>
+</main>
+<script>
+(function(){
+  // ====== CONFIGURAÇÃO ======
+  // Número do WhatsApp do escritório: só dígitos, com 55 + DDD. Ex.: 5511999999999
+  var WHATSAPP_NUMERO = '';
+  // ==========================
+
+  var nome = '';
+  try { nome = sessionStorage.getItem('ca_nome') || ''; } catch(e){}
+  var primeiro = nome.split(' ')[0];
+  if (primeiro) {
+    var t = document.getElementById('titulo');
+    t.textContent = 'Obrigado, ';
+    var s = document.createElement('span'); s.textContent = primeiro; t.appendChild(s);
+  }
+  var msg = nome
+    ? 'Olá, meu nome é ' + nome + '. Vim pela página de Direito Previdenciário e gostaria de falar sobre meu caso.'
+    : 'Olá, vim pela página de Direito Previdenciário e gostaria de falar sobre meu caso.';
+  var url = 'https://wa.me/' + WHATSAPP_NUMERO.replace(/\D/g, '') + '?text=' + encodeURIComponent(msg);
+  document.getElementById('wa').href = url;
+
+  // Espaço para eventos de conversão (Google Ads / Meta Pixel), se forem instalados.
+
+  var n = 3, el = document.getElementById('count');
+  var timer = setInterval(function(){
+    n -= 1;
+    if (n > 0) { el.textContent = n; return; }
+    clearInterval(timer);
+    el.textContent = '0';
+    document.getElementById('texto').textContent = 'Se o WhatsApp não abriu automaticamente, toque no botão abaixo.';
+    location.href = url;
+  }, 1000);
+})();
+</script>
+</body>
+</html>

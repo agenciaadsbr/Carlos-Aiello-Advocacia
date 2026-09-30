@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advocacia previdenciária em São Paulo | Carlos Aiello Advocacia</title>
+<meta name="description" content="Advocacia previdenciária em São Paulo. Orientação em questões com o INSS, com atenção ao BPC/LOAS para idosos e ao salário-maternidade, inclusive em casos de benefício negado.">
+<meta property="og:title" content="Carlos Aiello Advocacia | Advocacia previdenciária">
+<meta property="og:description" content="Orientação jurídica em BPC/LOAS para idosos e salário-maternidade.">
+<meta name="theme-color" content="#0F1F38">
+<link rel="icon" href="assets/monogram.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#F6F5F1}
+a{color:#0F1F38}a:hover{color:#0F1F38}
+.lp{--navy:#0F1F38;--navy2:#162B4A;--navy3:#0A1629;--ink:#17202E;--muted:#525C6A;--paper:#F6F5F1;--mist:#ECEEF1;--line:#D9DCE1;--gold-lt:#DDB872;--gold-ink:#7E5A1C;width:100%;background:var(--paper);color:var(--ink);font-family:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:16.5px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.lp *{box-sizing:border-box}
+.lp h1,.lp h2,.lp h3{font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;font-weight:600;letter-spacing:-0.005em;margin:0}
+.lp p{margin:0}
+.lp img{display:block;max-width:100%}
+.lp a:focus-visible,.lp button:focus-visible,.lp input:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+.lp section{scroll-margin-top:76px;position:relative}
+.ic{width:22px;height:22px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.todo{background:rgba(195,144,60,.16);color:var(--gold-ink);padding:1px 6px;border-radius:2px;font-size:.9em}
+.lp h2{font-size:clamp(34px,3.8vw,52px);line-height:1.08;color:var(--navy)}
+.lead-sm{color:var(--muted);max-width:540px}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:30;background:var(--navy);border-bottom:1px solid rgba(221,184,114,.14);transition:box-shadow .4s ease}
+.hdr.is-scrolled{box-shadow:0 10px 30px rgba(6,14,28,.35)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px;transition:height .4s ease}
+.hdr.is-scrolled .hdr-in{height:68px}
+.logo img{height:46px;width:auto;transition:height .4s ease}
+.hdr.is-scrolled .logo img{height:40px}
+.nav{display:flex;gap:36px}
+.nav a{color:rgba(255,255,255,.82);text-decoration:none;font-size:14px;font-weight:500;position:relative;padding:8px 0;transition:color .3s}
+.nav a:hover{color:#fff}
+.nav a::after{content:'';position:absolute;left:0;right:0;bottom:2px;height:1px;background:var(--gold-lt);transform:scaleX(0);transform-origin:right;transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.nav a:hover::after{transform:scaleX(1);transform-origin:left}
+.burger{display:none;align-items:center;justify-content:center;width:46px;height:46px;background:transparent;border:1px solid rgba(221,184,114,.4);border-radius:3px;color:#fff;cursor:pointer}
+.mnav{display:none}
+.mnav-panel{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding:4px 20px 24px;animation:dropIn .35s cubic-bezier(.2,.7,.2,1)}
+.mnav-panel a.ml{display:flex;align-items:center;justify-content:space-between;min-height:54px;border-bottom:1px solid rgba(255,255,255,.08);color:#fff;text-decoration:none;font-size:17px}
+.mnav-panel .btn{width:100%;margin-top:20px}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;background:var(--navy);color:#fff;border:1px solid var(--navy);border-radius:14px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;letter-spacing:.01em;line-height:1;text-decoration:none;cursor:pointer;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease,background .3s ease}
+.btn::after{content:'';position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-18deg);transition:left .7s ease}
+.btn:hover{transform:translateY(-2px);color:#fff;box-shadow:0 14px 28px rgba(15,31,56,.22)}
+.btn:hover::after{left:130%}
+.btn-gold{background:var(--gold);border-color:var(--gold);color:var(--navy3)}
+.btn-gold:hover{color:var(--navy3);box-shadow:0 14px 30px rgba(195,144,60,.3)}
+.btn-ghost{background:transparent;border-color:rgba(221,184,114,.55);color:#fff;min-height:44px;padding:0 20px;font-size:13.5px}
+.btn-ghost:hover{background:rgba(221,184,114,.1);box-shadow:none}
+.lnk{display:inline-flex;align-items:center;gap:10px;color:var(--navy);font-weight:600;font-size:15px;text-decoration:none;padding:6px 0;background:linear-gradient(var(--gold),var(--gold)) left bottom/100% 1px no-repeat;transition:background-size .4s ease}
+.lnk:hover{background-size:0 1px;background-position:right bottom}
+.lnk .ic{width:18px;height:18px;transition:transform .35s ease}
+.lnk:hover .ic{transform:translateY(3px)}
+.lnk-light{color:#fff}
+.lnk-light:hover{color:#fff}
+
+/* hero */
+.hero{background:var(--navy);color:#C7D0DD;padding:84px 0 0;overflow:hidden;isolation:isolate}
+.hero-glow{position:absolute;right:-10%;top:-20%;width:70%;height:120%;background:radial-gradient(closest-side,rgba(195,144,60,.16),transparent 70%);z-index:-1;pointer-events:none}
+.hero-mono{position:absolute;left:-60px;bottom:40px;width:420px;opacity:.045;z-index:-1;pointer-events:none}
+.hero-cols{position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:calc(100% / 6) 100%}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px;align-items:center;padding-bottom:96px}
+.hero h1{font-size:clamp(44px,5.4vw,76px);line-height:1.02;color:#fff;font-weight:500}
+.hero h1 .h1-gold{display:block;color:var(--gold-lt);font-style:italic}
+.hero .lead{font-size:18px;line-height:1.7;color:#C7D0DD;max-width:520px;margin-top:28px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:32px;align-items:center;margin-top:40px}
+.trust{display:flex;flex-wrap:wrap;gap:14px 34px;margin-top:52px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1)}
+.trust span{display:inline-flex;align-items:center;gap:10px;font-size:13.5px;color:#AFBACB}
+.trust .ic{color:var(--gold-lt);width:20px;height:20px}
+.hv{position:relative;justify-self:end;width:100%;max-width:470px}
+.hv::before{content:'';position:absolute;left:-18%;top:18%;width:80%;aspect-ratio:1/1;border-radius:50%;background:radial-gradient(closest-side,rgba(195,144,60,.28),transparent);filter:blur(10px);z-index:-1}
+.hv-dots{position:absolute;right:-34px;top:-26px;width:120px;height:120px;border-radius:50%;background-image:radial-gradient(rgba(221,184,114,.55) 1.4px,transparent 1.6px);background-size:14px 14px;opacity:.7;pointer-events:none}
+.hv-line{position:absolute;inset:-18px 18px 18px -18px;border:1px solid rgba(221,184,114,.5);border-radius:260px 260px 40px 40px;pointer-events:none}
+.hv-photo{position:relative;aspect-ratio:4/5;border-radius:260px 260px 40px 40px;overflow:hidden;background:var(--navy2)}
+.hv-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.hv-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,31,56,0) 55%,rgba(15,31,56,.55))}
+.chip{position:absolute;display:flex;align-items:center;gap:12px;padding:12px 20px 12px 12px;background:rgba(15,31,56,.8);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(221,184,114,.28);border-radius:20px;color:#fff;font-size:13.5px;line-height:1.35;box-shadow:0 18px 40px rgba(4,10,22,.35)}
+.chip small{display:block;color:#AFBACB;font-size:12px}
+.chip .ic{color:var(--gold-lt);width:40px;height:40px;padding:9px;border-radius:50%;background:rgba(221,184,114,.14)}
+.chip-a{left:-54px;top:18%}
+.chip-b{right:-26px;bottom:14%}
+
+/* marquee */
+.mq-wrap{position:relative;z-index:1}
+.mq{background:var(--navy3);border-top:1px solid rgba(221,184,114,.18);border-bottom:1px solid rgba(221,184,114,.18);overflow:hidden;padding:20px 0}
+.mq-track{display:flex;width:max-content;animation:marquee 46s linear infinite}
+.mq:hover .mq-track{animation-play-state:paused}
+.mq-set{display:flex;align-items:center}
+.mq-item{display:inline-flex;align-items:center;gap:28px;padding-right:28px;font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;font-style:italic;color:#D6DCE5;white-space:nowrap}
+.mq-item::after{content:'';width:6px;height:6px;background:var(--gold);transform:rotate(45deg)}
+
+/* situacoes */
+.sit{padding:128px 0;overflow:hidden}
+.blob{position:absolute;border-radius:50%;pointer-events:none;z-index:0;filter:blur(70px)}
+.blob-gold{background:rgba(195,144,60,.22)}
+.blob-navy{background:rgba(22,43,74,.14)}
+.sit .wrap,.mat .wrap{position:relative;z-index:1}
+.sec-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:end;margin-bottom:64px}
+.sit-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}
+.panel{position:relative;padding:52px 48px 48px;border-radius:36px;overflow:hidden}
+.panel-a{background:var(--navy);color:#C7D0DD;box-shadow:0 40px 70px -35px rgba(15,31,56,.6)}
+.panel-a .p-mono{position:absolute;right:-40px;top:-30px;width:230px;opacity:.07;pointer-events:none}
+.panel-b{background:#fff;margin-top:72px;box-shadow:0 40px 80px -40px rgba(15,31,56,.28);border-radius:36px 36px 36px 120px}
+.p-tag{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600}
+.panel-a .p-tag{color:var(--gold-lt)}
+.panel-b .p-tag{color:var(--gold-ink)}
+.panel h3{font-size:32px;line-height:1.15;margin-top:14px;color:var(--navy);max-width:420px}
+.panel-a h3{color:#fff}
+.plist{list-style:none;padding:0;margin:32px 0 40px}
+.plist{display:flex;flex-direction:column;gap:4px}
+.plist li{display:flex;align-items:center;gap:14px;padding:8px 10px 8px 0;border-radius:14px;font-weight:500;font-size:15.5px;color:var(--navy);transition:background .3s ease,padding .3s ease}
+.plist li:hover{background:rgba(195,144,60,.08);padding-left:8px}
+.panel-a .plist li{color:#E4E9F0}
+.panel-a .plist li:hover{background:rgba(255,255,255,.05)}
+.plist .ic{width:38px;height:38px;padding:9px;border-radius:50%;background:rgba(195,144,60,.12);color:var(--gold-ink)}
+.panel-a .plist .ic{color:var(--gold-lt);background:rgba(221,184,114,.12)}
+
+/* bpc */
+.bpc{padding:128px 0;background:var(--mist);margin:0 24px;border-radius:56px}
+.bpc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:96px;align-items:center}
+.bv{position:relative}
+.bv-frame{position:relative;aspect-ratio:4/3;border-radius:180px 36px 36px 36px;overflow:hidden;background:var(--navy2)}
+.bv-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.bv:hover .bv-frame img{transform:scale(1.035)}
+.bv-block{position:absolute;left:-34px;bottom:-34px;width:190px;height:190px;border-radius:50%;background-image:radial-gradient(rgba(195,144,60,.7) 1.6px,transparent 1.8px);background-size:15px 15px;z-index:-1}
+.bv-note{position:absolute;right:32px;bottom:-28px;display:flex;align-items:center;gap:14px;background:#fff;padding:12px 22px 12px 12px;border-radius:22px;box-shadow:0 20px 44px rgba(15,31,56,.16);font-size:13.5px;line-height:1.35;color:var(--navy);font-weight:600}
+.bv-note small{display:block;font-weight:400;color:var(--muted);font-size:12.5px}
+.bv-note .ic-wrap{width:42px;height:42px;border-radius:50%;background:var(--navy);color:var(--gold-lt);display:flex;align-items:center;justify-content:center}
+.bpc-copy .txt{color:var(--muted);margin-top:26px;max-width:540px}
+.hl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:38px 0 40px}
+.hl div{display:flex;align-items:center;gap:14px;padding:12px 16px 12px 12px;background:#fff;border-radius:20px;box-shadow:0 12px 24px -18px rgba(15,31,56,.35);color:var(--navy);font-weight:500;font-size:15px;line-height:1.35}
+.hl .ic{width:40px;height:40px;padding:9px;border-radius:50%;background:rgba(195,144,60,.12);color:var(--gold-ink)}
+.note{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1.45;color:var(--muted);margin-top:30px !important;max-width:500px}
+
+/* maternidade */
+.mat{padding:136px 0 150px;overflow:hidden}
+.mat-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:96px;align-items:center}
+.mat-copy .txt{color:var(--muted);margin-top:26px;max-width:540px}
+.rows{list-style:none;padding:0;margin:36px 0 42px;display:flex;flex-wrap:wrap;gap:10px}
+.rows li{display:flex;align-items:center;gap:12px;padding:7px 20px 7px 7px;background:#fff;border-radius:40px;color:var(--navy);font-weight:500;font-size:15px;box-shadow:0 12px 24px -18px rgba(15,31,56,.35);transition:transform .3s ease}
+.rows li:hover{transform:translateY(-2px)}
+.rows .ic{width:36px;height:36px;padding:8px;border-radius:50%;background:rgba(195,144,60,.12);color:var(--gold-ink)}
+.mv{position:relative}
+.mv-frame{aspect-ratio:4/5;border-radius:240px 40px 240px 40px;overflow:hidden;background:var(--mist)}
+.mv-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+.badge{position:absolute;left:-58px;bottom:44px;width:148px;height:148px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;box-shadow:0 20px 44px rgba(15,31,56,.25)}
+.badge svg.rot{position:absolute;inset:0;width:100%;height:100%;animation:spin 26s linear infinite}
+.badge text{font-family:'Montserrat',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.2em;fill:#DDB872}
+.badge .ic{width:30px;height:30px;color:#fff}
+
+/* negativa */
+.neg{padding:136px 0 176px;background:var(--navy);color:#C7D0DD;overflow:hidden;border-radius:64px 64px 0 0}
+.neg h2{color:#fff}
+.neg-top{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:80px;align-items:center}
+.neg-top .txt{margin-top:26px;max-width:500px}
+.illus{position:relative;height:420px}
+.doc{position:absolute;left:4%;top:10px;width:58%;background:#FBFAF7;border-radius:22px;padding:30px 28px;transform:rotate(-3deg);box-shadow:0 30px 60px rgba(3,8,18,.45)}
+.doc-top{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.doc-seal{width:38px;height:38px;border-radius:50%;border:1.5px solid #9AA3B2}
+.doc-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;font-weight:600;color:var(--navy);margin-bottom:16px !important}
+.bar{display:block;height:7px;border-radius:4px;background:#E1E4E9;margin-bottom:10px}
+.w25{width:25%}.w30{width:30%}.w40{width:40%}.w60{width:60%}.w75{width:75%}.w80{width:80%}.w85{width:85%}.w90{width:90%}
+.doc-hl{margin:16px 0 14px !important;font-size:14px;font-weight:600;color:var(--navy)}
+.doc-hl mark{color:var(--navy);padding:2px 4px;background:linear-gradient(rgba(221,184,114,.75),rgba(221,184,114,.75)) left center/100% 100% no-repeat}
+.phone{position:absolute;right:4%;bottom:0;width:38%;min-width:200px;background:var(--navy3);border:1px solid rgba(221,184,114,.3);border-radius:28px;padding:34px 18px 26px;transform:rotate(4deg);box-shadow:0 30px 60px rgba(3,8,18,.5)}
+.phone-notch{position:absolute;top:12px;left:50%;width:56px;height:6px;margin-left:-28px;border-radius:4px;background:rgba(255,255,255,.14)}
+.phone-title{color:#fff;font-weight:600;font-size:14px;margin-bottom:16px !important}
+.ck{display:flex;align-items:center;gap:10px;padding:11px 12px;margin-bottom:8px;border-radius:8px;background:rgba(255,255,255,.06);color:#E4E9F0;font-size:12.5px}
+.ck-box{width:20px;height:20px;border-radius:50%;background:var(--gold);color:var(--navy3);display:flex;align-items:center;justify-content:center;flex:0 0 20px}
+.ck-box .ic{width:12px;height:12px;stroke-width:2.6}
+.prog{height:5px;border-radius:3px;background:rgba(255,255,255,.1);margin-top:16px;overflow:hidden}
+.prog span{display:block;height:100%;width:100%;background:var(--gold);transform-origin:left}
+.steps{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px;margin-top:104px}
+.st{position:relative;display:flex;flex-direction:column;padding:30px 28px 32px;min-height:208px;border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);transition:border-color .35s ease,transform .35s ease,background .35s ease}
+.st:not(:last-child)::after{content:'';position:absolute;right:-26px;top:56px;width:10px;height:10px;border-top:1.5px solid rgba(221,184,114,.7);border-right:1.5px solid rgba(221,184,114,.7);transform:rotate(45deg)}
+.st-last{background:linear-gradient(180deg,rgba(221,184,114,.13),rgba(221,184,114,.04));border-color:rgba(221,184,114,.32)}
+.st-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.st-ic{width:52px;height:52px;border-radius:50%;background:rgba(221,184,114,.12);color:var(--gold-lt);display:flex;align-items:center;justify-content:center}
+.st-ic .ic{width:24px;height:24px}
+.st:hover{border-color:rgba(221,184,114,.38);transform:translateY(-4px)}
+.st-n{font-family:'Montserrat',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.06em;font-variant-numeric:lining-nums;color:rgba(221,184,114,.85)}
+.st h3{font-family:'Montserrat',sans-serif !important;font-size:17px;font-weight:600;line-height:1.4;color:#fff;margin-top:auto !important;padding-top:30px;letter-spacing:0}
+.neg-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:28px;margin-top:84px;padding-top:36px;border-top:1px solid rgba(255,255,255,.1)}
+.neg-foot p{max-width:580px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:21px;line-height:1.45;color:#D6DCE5}
+
+/* como funciona */
+.how{padding:128px 0;background:var(--paper);border-radius:64px 64px 0 0;margin-top:-64px;z-index:2}
+.how .sec-head{grid-template-columns:minmax(0,1fr);justify-items:center;text-align:center;gap:18px}
+.how .sec-head p{margin:0 auto}
+.how-grid{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px;margin-top:72px}
+.how-track{position:absolute;left:12%;right:12%;top:68px;height:1px;background-image:linear-gradient(90deg,var(--line) 50%,transparent 50%);background-size:10px 1px}
+.how-dot{position:absolute;top:-4px;left:0;width:9px;height:9px;border-radius:50%;background:var(--gold);animation:travel 7s cubic-bezier(.6,0,.4,1) infinite}
+.how-ic{position:relative;width:64px;height:64px;border-radius:50%;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--navy)}
+.how-ic .ic{width:26px;height:26px}
+.how-ic b{position:absolute;right:-6px;top:-6px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--gold-lt);font-size:12px;display:flex;align-items:center;justify-content:center;font-weight:600}
+.how-item{position:relative;z-index:1;background:#fff;border-radius:32px;padding:36px 32px 38px;box-shadow:0 30px 60px -40px rgba(15,31,56,.35)}
+.how-item:nth-child(3){transform:translateY(28px)}
+.how-item h3{font-size:27px;line-height:1.2;color:var(--navy);margin-top:28px !important}
+.how-item p{color:var(--muted);margin-top:10px !important;max-width:320px}
+
+/* sobre */
+.sobre{padding:128px 0;background:var(--mist);margin:120px 24px 0;border-radius:56px}
+.sobre-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:96px;align-items:center}
+.portrait{position:relative;aspect-ratio:4/5;max-width:400px;border-radius:200px 200px 36px 36px;background:var(--navy);overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:32px;text-align:center}
+.portrait img{width:78%;max-width:260px}
+.portrait p{color:#AFBACB;font-size:13px;max-width:240px}
+.portrait::before{content:'';position:absolute;inset:14px;border:1px solid rgba(221,184,114,.3);border-radius:186px 186px 24px 24px;pointer-events:none}
+.sobre-copy .txt{color:var(--muted);margin-top:24px;max-width:600px}
+.sobre-meta{display:flex;flex-wrap:wrap;gap:14px 40px;margin-top:36px;padding-top:26px;border-top:1px solid var(--line);font-size:15px;color:var(--navy);font-weight:500}
+.sobre-meta span{display:inline-flex;align-items:center;gap:10px}
+.sobre-meta .ic{color:var(--gold-ink)}
+
+/* faq */
+.faq{padding:128px 0;background:var(--paper)}
+.faq-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:88px;align-items:start}
+.faq-side{position:sticky;top:120px}
+.faq-side p{color:var(--muted);margin:22px 0 30px !important;max-width:340px}
+.faq-item{background:rgba(255,255,255,.55);border:1px solid var(--line);border-radius:20px;padding:0 26px;margin-bottom:12px;transition:background .35s ease,box-shadow .35s ease,border-color .35s ease}
+.faq-item:hover{border-color:#C9CED6}
+.faq-item.is-open{background:#fff;border-color:transparent;box-shadow:0 24px 48px -30px rgba(15,31,56,.35)}
+.faq-q{font-family:'Montserrat',sans-serif !important;font-size:inherit;letter-spacing:0 !important;font-weight:inherit}
+.faq-btn{width:100%;display:flex;justify-content:space-between;align-items:center;gap:28px;text-align:left;background:none;border:0;padding:24px 0;min-height:44px;font-family:'Montserrat',sans-serif;font-size:16.5px;font-weight:600;line-height:1.45;color:var(--navy);cursor:pointer}
+.faq-pm{position:relative;flex:0 0 34px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);transition:background .35s ease,border-color .35s ease}
+.faq-pm::before,.faq-pm::after{content:'';position:absolute;left:10px;top:16px;width:12px;height:1.5px;background:var(--navy);transition:transform .35s ease,background .35s ease}
+.faq-pm::after{transform:rotate(90deg)}
+.is-open .faq-pm{background:var(--navy);border-color:var(--navy)}
+.is-open .faq-pm::before,.is-open .faq-pm::after{background:var(--gold-lt)}
+.is-open .faq-pm::after{transform:rotate(0deg)}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.7,.2,1)}
+.is-open .faq-a{grid-template-rows:1fr}
+.faq-a-in{overflow:hidden}
+.faq-a p{padding:0 56px 26px 0;color:var(--muted);font-size:15.5px}
+
+/* cta */
+.cta{background:var(--navy);color:#C7D0DD;padding:136px 0 150px;overflow:hidden;isolation:isolate;border-radius:64px 64px 0 0;margin-top:40px}
+.cta h2{color:#fff}
+.cta-mono{position:absolute;right:-80px;bottom:-60px;width:520px;opacity:.05;z-index:-1;pointer-events:none}
+.cta-glow{position:absolute;left:-10%;top:-30%;width:60%;height:140%;background:radial-gradient(closest-side,rgba(195,144,60,.13),transparent 70%);z-index:-1}
+.cta-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:88px;align-items:center}
+.cta-copy .txt{font-size:18px;margin-top:26px;max-width:460px}
+.form{position:relative;background:#fff;color:var(--ink);padding:48px 44px 40px;border-radius:32px;box-shadow:0 40px 80px rgba(3,8,18,.4)}
+.form::before{content:'';position:absolute;left:50%;top:-1px;width:90px;margin-left:-45px;height:4px;border-radius:0 0 4px 4px;background:var(--gold)}
+.form-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:30px;font-weight:600;color:var(--navy);margin-bottom:28px !important}
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
+.field label{font-size:13.5px;font-weight:600;color:var(--navy)}
+.inp{position:relative}
+.inp .ic{position:absolute;left:16px;top:50%;margin-top:-10px;width:20px;height:20px;color:#8A93A1;pointer-events:none;transition:color .25s}
+.inp:focus-within .ic{color:var(--navy)}
+.inp input{width:100%;height:58px;padding:0 16px 0 48px;border:1px solid #CDD2D9;border-radius:14px;background:#FAFAF8;font-family:'Montserrat',sans-serif;font-size:16px;color:var(--ink);transition:border-color .25s ease,box-shadow .25s ease,background .25s ease}
+.inp input::placeholder{color:#8A93A1}
+.inp input:focus{outline:none;border-color:var(--navy);background:#fff;box-shadow:0 0 0 4px rgba(15,31,56,.1)}
+.btn-wa{width:100%;min-height:60px;font-size:16px;margin-top:6px}
+.btn-wa .wa{width:21px;height:21px}
+.erro{display:flex;align-items:center;gap:8px;color:#A3341C;font-size:14px;font-weight:500;margin-bottom:14px !important;animation:shake .4s ease}
+.form-legal{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;line-height:1.55;color:var(--muted);margin-top:18px !important}
+.form-legal .ic{width:16px;height:16px;margin-top:2px;color:var(--gold-ink)}
+
+/* footer */
+.ftr{position:relative;z-index:2;background:var(--navy3);color:#9DA9BA;padding:96px 0 40px;font-size:14px;margin-top:-56px;border-radius:56px 56px 0 0}
+.ftr a{color:#C7D0DD;text-decoration:none;transition:color .25s}
+.ftr a:hover{color:var(--gold-lt)}
+.ftr-links{display:flex;flex-direction:column;gap:10px}
+.ftr-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,3fr) minmax(0,3fr);gap:56px}
+.ftr-logo{width:190px}
+.ftr h4{margin:0 0 18px;font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:600;color:#fff}
+.ftr p{display:flex;align-items:center;gap:10px;margin:0 0 10px !important}
+.ftr .ic{width:17px;height:17px;color:var(--gold-lt)}
+.ftr .todo{background:rgba(221,184,114,.12);color:var(--gold-lt)}
+.ftr-disc{display:block !important;margin-top:22px !important;max-width:330px;line-height:1.6}
+.ftr-bottom{margin-top:60px;padding-top:26px;border-top:1px solid rgba(255,255,255,.08);display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:12.5px;color:#76839A}
+
+/* sticky mobile cta */
+.sticky{display:none}
+
+/* overlay */
+.ovl{position:fixed;inset:0;z-index:60;background:var(--navy);color:#C7D0DD;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;animation:fade .35s ease;isolation:isolate;overflow:hidden}
+.ovl-mono{position:absolute;width:560px;opacity:.04;z-index:-1}
+.ovl-box{max-width:460px;display:flex;flex-direction:column;align-items:center;gap:18px}
+.ovl-box h2{color:#fff;font-size:34px}
+.ring{position:relative;width:132px;height:132px}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:3}
+.ring .r-bg{stroke:rgba(255,255,255,.1)}
+.ring .r-fg{stroke:#DDB872;stroke-linecap:round;stroke-dasharray:339.3;stroke-dashoffset:339.3;animation:ring 3s linear forwards}
+.ring b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:56px;font-weight:500;color:#fff}
+.ovl-hi{color:var(--gold-lt);font-weight:600}
+.ovl-back{background:none;border:0;color:#AFBACB;font-family:'Montserrat',sans-serif;font-size:13.5px;text-decoration:underline;text-underline-offset:4px;cursor:pointer;min-height:44px}
+
+/* keyframes */
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes dropIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+@keyframes unveil{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes kenburns{from{transform:scale(1.14)}to{transform:scale(1)}}
+@keyframes drawBox{from{opacity:0;transform:translate(14px,-14px)}to{opacity:1;transform:none}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes travel{0%{left:0;opacity:0}8%{opacity:1}92%{opacity:1}100%{left:100%;opacity:0}}
+@keyframes ring{to{stroke-dashoffset:0}}
+@keyframes shake{0%,100%{transform:none}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes hlSweep{from{background-size:0 100%}to{background-size:100% 100%}}
+@keyframes pop{from{opacity:0;transform:scale(.85) translateY(8px)}to{opacity:1;transform:none}}
+
+/* hero orchestration (one load sequence) */
+.hero h1{animation:rise 1s cubic-bezier(.2,.7,.2,1) .15s both}
+.hero .lead{animation:rise 1s cubic-bezier(.2,.7,.2,1) .35s both}
+.hero-ctas{animation:rise 1s cubic-bezier(.2,.7,.2,1) .5s both}
+.trust{animation:fade 1.2s ease .9s both}
+.hv-photo{animation:unveil 1.3s cubic-bezier(.7,0,.2,1) .2s both}
+.hv-photo img{animation:kenburns 2.8s cubic-bezier(.2,.7,.2,1) .2s both}
+.hv-line{animation:drawBox 1.2s cubic-bezier(.2,.7,.2,1) 1s both}
+.chip-a{animation:rise .9s cubic-bezier(.2,.7,.2,1) 1.2s both,floaty 6s ease-in-out 2.2s infinite}
+.chip-b{animation:rise .9s cubic-bezier(.2,.7,.2,1) 1.4s both,floaty 7s ease-in-out 2.4s infinite}
+
+/* scroll-driven, only where supported */
+@supports (animation-timeline: view()){
+.rv{animation:rise linear both;animation-timeline:view();animation-range:entry 0% cover 24%}
+.doc-hl mark{animation:hlSweep linear both;animation-timeline:view();animation-range:entry 55% cover 50%}
+.ck{animation:pop linear both;animation-timeline:view();animation-range:entry 40% cover 40%}
+.ck2{animation-range:entry 60% cover 46%}
+.ck3{animation-range:entry 80% cover 52%}
+.prog span{animation:grow linear both;animation-timeline:view();animation-range:entry 80% cover 55%}
+}
+@media (prefers-reduced-motion: reduce){
+.lp *,.lp *::before,.lp *::after{animation:none !important;transition:none !important}
+}
+
+/* responsive */
+@media (max-width: 1080px){
+.chip-a{left:-20px}.chip-b{right:-10px}
+.badge{left:-24px}
+.bv-note{right:20px}
+}
+@media (max-width: 960px){
+.lp{font-size:15.5px}
+.wrap{padding:0 20px}
+.nav,.hdr-cta{display:none}
+.burger{display:inline-flex}
+.mnav{display:block}
+.hdr-in,.hdr.is-scrolled .hdr-in{height:64px}
+.logo img,.hdr.is-scrolled .logo img{height:34px}
+.lp section{scroll-margin-top:64px}
+.hero{padding:44px 0 0}
+.hero-grid,.sec-head,.sit-grid,.bpc-grid,.mat-grid,.neg-top,.cta-grid,.sobre-grid,.faq-grid{grid-template-columns:minmax(0,1fr);gap:44px}
+.hero-grid{padding-bottom:64px}
+.hero .lead{font-size:16px;margin-top:20px}
+.hero-ctas{flex-direction:column;align-items:stretch;gap:18px;margin-top:30px}
+.hero-ctas .lnk{align-self:flex-start}
+.trust{flex-direction:column;gap:12px;margin-top:36px}
+.hv{justify-self:center;max-width:340px;margin:8px auto 0}
+.hv-line{inset:-12px 12px 12px -12px}
+.chip{padding:10px 14px;font-size:12.5px}
+.chip-a{left:-12px;top:12%}.chip-b{right:-8px;bottom:10%}
+.hero-mono{width:260px;left:-40px}
+.mq{padding:14px 0}.mq-item{font-size:18px}
+.sit,.bpc,.mat,.neg,.how,.sobre,.faq{padding:80px 0}
+.bpc,.sobre{margin-left:10px;margin-right:10px;border-radius:32px}
+.sobre{margin-top:72px}
+.neg{border-radius:36px 36px 0 0;padding-bottom:120px}
+.how{border-radius:36px 36px 0 0;margin-top:-40px}
+.cta{border-radius:36px 36px 0 0}
+.how-item:nth-child(3){transform:none}
+.panel{border-radius:28px}
+.panel-b{border-radius:28px 28px 28px 80px}
+.cta{padding:84px 0}
+.sec-head{margin-bottom:36px;gap:16px}
+.panel{padding:36px 24px 30px}
+.panel-b{margin-top:0}
+.panel h3{font-size:27px}
+.panel .btn,.bpc-copy .btn,.mat-copy .btn{width:100%}
+.bv{margin:0 12px 20px 16px}
+.bv-frame{aspect-ratio:4/3}
+.bv-block{left:-16px;bottom:-16px}
+.bv-note{right:-8px;top:auto;bottom:18px;padding:12px 14px}
+.hl{grid-template-columns:minmax(0,1fr);gap:10px}
+.mat-grid .mv{order:-1;margin:0 0 0 30px}
+.mv-frame{aspect-ratio:1/1;border-radius:160px 28px 160px 28px}
+.badge{width:112px;height:112px;left:-30px;bottom:24px}
+.badge text{font-size:14px}
+.illus{height:340px}
+.doc{width:70%;left:0;padding:22px 20px}
+.phone{width:52%;min-width:0;right:0}
+.steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:56px}
+.st{padding:24px 20px 24px;min-height:0;border-radius:22px}
+.st:not(:last-child)::after{display:none}
+.st h3{font-size:15.5px;padding-top:22px}
+.st-ic{width:44px;height:44px}
+.neg-foot{margin-top:56px}
+.neg-foot .btn{width:100%}
+.how-grid{grid-template-columns:minmax(0,1fr);gap:40px;margin-top:44px}
+.how-track{display:none}
+.portrait{max-width:none;aspect-ratio:16/12;border-radius:160px 160px 28px 28px}
+.portrait::before{border-radius:146px 146px 18px 18px}
+.hv-dots{display:none}
+.ftr{margin-top:-36px;padding-top:72px;border-radius:36px 36px 0 0}
+.faq-side{position:static}
+.faq-item.is-open{padding:0 16px}
+.faq-btn{font-size:15.5px;padding:20px 0}
+.faq-a p{padding-right:4px}
+.form{padding:36px 22px 30px;border-radius:26px}
+.ftr-grid{grid-template-columns:minmax(0,1fr);gap:36px}
+.ftr{padding-bottom:110px}
+.sticky{display:block;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:rgba(15,31,56,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid rgba(221,184,114,.2);transform:translateY(110%);transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.sticky.is-on{transform:none}
+.sticky .btn{width:100%;min-height:52px}
+}
+@media (max-width: 520px){
+.hero h1{font-size:42px}
+.steps{grid-template-columns:minmax(0,1fr)}
+.illus{height:300px}
+.phone{padding:28px 12px 18px;border-radius:22px}
+.ck{font-size:11.5px;padding:9px 10px}
+.doc-title{font-size:19px}
+}
+
+[hidden]{display:none !important}
+.burger [data-i="x"]{display:none}
+.hdr.menu-open .burger [data-i="x"]{display:block}
+.hdr.menu-open .burger [data-i="bars"]{display:none}
+.btn-wa[disabled]{opacity:.75;cursor:wait}
+.hdr.is-scrolled{box-shadow:0 10px 30px rgba(6,14,28,.35)}
+</style>
+</head>
+<body>
+<div class="lp" style="--gold: #C3903C">
+
+<header class="hdr" id="hdr">
+<div class="wrap hdr-in">
+<a class="logo" href="#topo" aria-label="Carlos Aiello Advocacia, início"><img src="assets/logo-h-light.png" alt="Carlos Aiello Advocacia"></a>
+<nav class="nav" aria-label="Principal">
+<a href="#bpc">BPC/LOAS</a>
+<a href="#maternidade">Salário-maternidade</a>
+<a href="#como-funciona">Como funciona</a>
+<a href="#duvidas">Dúvidas</a>
+</nav>
+<a class="btn btn-ghost hdr-cta" href="#contato">Falar com um advogado</a>
+<button type="button" class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mnav-panel" id="burger">
+<svg class="ic" data-i="x" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+<svg class="ic" data-i="bars" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M9 17h11"></path></svg>
+</button>
+</div>
+<div class="mnav">
+<div class="mnav-panel" id="mnav-panel" hidden>
+<a class="ml" href="#bpc" data-close-menu>BPC/LOAS</a>
+<a class="ml" href="#maternidade" data-close-menu>Salário-maternidade</a>
+<a class="ml" href="#como-funciona" data-close-menu>Como funciona</a>
+<a class="ml" href="#duvidas" data-close-menu>Dúvidas</a>
+<a class="btn btn-gold" href="#contato" data-close-menu>Falar com um advogado</a>
+</div>
+</div>
+</header>
+
+<main>
+
+<section class="hero" id="topo">
+<span class="hero-glow" aria-hidden="true"></span>
+<span class="hero-cols" aria-hidden="true"></span>
+<img class="hero-mono" src="assets/monogram.png" alt="" aria-hidden="true">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<h1>Advocacia previdenciária <span class="h1-gold">para você e sua família</span></h1>
+<p class="lead">Orientação jurídica em questões com o INSS, com atenção especial ao BPC/LOAS para idosos e ao salário-maternidade, inclusive quando o benefício foi negado.</p>
+<div class="hero-ctas">
+<a class="btn btn-gold" href="#contato">Falar com um advogado</a>
+<a class="lnk lnk-light" href="#situacoes">Ver como podemos ajudar <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></a>
+</div>
+<div class="trust">
+<span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"></path></svg>Atendimento pelo WhatsApp</span>
+<span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20.5 20.5l-4.5-4.5"></path></svg>Análise individual de cada caso</span>
+<span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.4-7.5 9.5-4.3-1.1-7.5-4.9-7.5-9.5V6z"></path><path d="M8.8 12.2l2.2 2.2 4.3-4.4"></path></svg>Linguagem simples, sem juridiquês</span>
+</div>
+</div>
+<div class="hv">
+<span class="hv-dots" aria-hidden="true"></span>
+<span class="hv-line" aria-hidden="true"></span>
+<div class="hv-photo"><img src="assets/hero-familia.jpg" alt="Filha e mãe idosa lendo juntas um documento no sofá de casa"></div>
+<div class="chip chip-a"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.2a6.5 6.5 0 0 1 3.5 5.8"></path></svg><span>BPC/LOAS<small>Pessoas com 65 anos ou mais</small></span></div>
+<div class="chip chip-b"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"></path></svg><span>Salário-maternidade<small>Negado ou não recebido</small></span></div>
+</div>
+</div>
+</section>
+
+<div class="mq-wrap">
+<div class="mq" aria-hidden="true">
+<div class="mq-track">
+<div class="mq-set"><span class="mq-item">BPC negado</span><span class="mq-item">Benefício suspenso ou cessado</span><span class="mq-item">CadÚnico</span><span class="mq-item">Renda familiar</span><span class="mq-item">Salário-maternidade negado</span><span class="mq-item">Desempregada no nascimento</span><span class="mq-item">MEI e autônomas</span><span class="mq-item">Trabalhadora rural</span><span class="mq-item">Adoção ou guarda judicial</span></div>
+<div class="mq-set"><span class="mq-item">BPC negado</span><span class="mq-item">Benefício suspenso ou cessado</span><span class="mq-item">CadÚnico</span><span class="mq-item">Renda familiar</span><span class="mq-item">Salário-maternidade negado</span><span class="mq-item">Desempregada no nascimento</span><span class="mq-item">MEI e autônomas</span><span class="mq-item">Trabalhadora rural</span><span class="mq-item">Adoção ou guarda judicial</span></div>
+</div>
+</div>
+</div>
+
+<section class="sit" id="situacoes">
+<span class="blob blob-gold" aria-hidden="true" style="width: 420px; height: 420px; right: -120px; top: 60px"></span>
+<span class="blob blob-navy" aria-hidden="true" style="width: 360px; height: 360px; left: -140px; bottom: 40px"></span>
+<div class="wrap">
+<div class="sec-head rv">
+<h2>Como podemos ajudar</h2>
+<p class="lead-sm">A atuação desta página se concentra em dois benefícios. Cada caso é avaliado a partir dos documentos e das circunstâncias de quem procura orientação.</p>
+</div>
+<div class="sit-grid">
+<div class="panel panel-a rv">
+<img class="p-mono" src="assets/monogram.png" alt="" aria-hidden="true">
+<p class="p-tag"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.2a6.5 6.5 0 0 1 3.5 5.8"></path></svg>BPC/LOAS para idoso</p>
+<h3>Para pessoas com 65 anos ou mais</h3>
+<ul class="plist">
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M9.8 12.8l4.4 4.4M14.2 12.8l-4.4 4.4"></path></svg>Benefício negado pelo INSS</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M10 9v6M14 9v6"></path></svg>Benefício suspenso ou cessado</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M12 11.5v6M9 14.5h6"></path></svg>Primeiro pedido do benefício</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="11" r="2.2"></circle><path d="M5.8 16.2a3.4 3.4 0 0 1 6.4 0M14.5 10h4M14.5 13.5h3"></path></svg>Questões relacionadas ao CadÚnico</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"></rect><path d="M8.5 7.5h7M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01M8.5 15h.01M12 15h.01M15.5 15h.01M8.5 18h.01M12 18h3.5"></path></svg>Análise da composição da renda familiar</li>
+</ul>
+<a class="btn btn-gold" href="#contato">Quero entender meu caso</a>
+</div>
+<div class="panel panel-b rv">
+<p class="p-tag"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"></path></svg>Salário-maternidade</p>
+<h3>Para mães e para quem adotou</h3>
+<ul class="plist">
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M9.8 12.8l4.4 4.4M14.2 12.8l-4.4 4.4"></path></svg>Benefício negado</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M5.7 5.7l12.6 12.6"></path></svg>Benefício não recebido</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12.5h18"></path></svg>Situações de desemprego</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5L5.5 4h13L20 9.5M4.5 9.5V20h15V9.5M10 20v-5h4v5M4 9.5a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0"></path></svg>MEI e autônomas</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9M12 12C12 8 9 5 4.5 5c0 4 3 7 7.5 7zM12 14.5c0-3.2 2.5-5.5 7-5.5 0 3.3-2.5 5.5-7 5.5z"></path></svg>Trabalhadoras rurais</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 11L12 4l8.5 7v8.5a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z"></path><path d="M12 17.5s-3-1.8-3-3.7a1.6 1.6 0 0 1 3-.9 1.6 1.6 0 0 1 3 .9c0 1.9-3 3.7-3 3.7z"></path></svg>Adoção ou guarda judicial</li>
+</ul>
+<a class="btn" href="#contato">Quero entender meu caso</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bpc" id="bpc">
+<div class="wrap bpc-grid">
+<div class="bv rv">
+<span class="bv-block" aria-hidden="true"></span>
+<div class="bv-frame"><img src="assets/bpc-avo-neto.jpg" alt="Avô e neto conversando na mesa da cozinha, em frente a um notebook"></div>
+<div class="bv-note"><span class="ic-wrap"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.2a6.5 6.5 0 0 1 3.5 5.8"></path></svg></span><span>BPC/LOAS<small>Pessoa idosa e família</small></span></div>
+</div>
+<div class="bpc-copy rv">
+<h2>Seu familiar tem 65 anos ou mais?</h2>
+<p class="txt">O BPC pode atender pessoas idosas que preencham os requisitos previstos para o benefício assistencial. Quando o pedido é negado, suspenso ou interrompido, é importante entender o motivo apresentado pelo INSS e verificar a documentação e a situação familiar.</p>
+<div class="hl">
+<div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M9.8 12.8l4.4 4.4M14.2 12.8l-4.4 4.4"></path></svg>Negativa do benefício</div>
+<div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M10 9v6M14 9v6"></path></svg>Benefício suspenso ou cessado</div>
+<div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M12 11.5v6M9 14.5h6"></path></svg>Primeiro pedido</div>
+<div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="11" r="2.2"></circle><path d="M5.8 16.2a3.4 3.4 0 0 1 6.4 0M14.5 10h4M14.5 13.5h3"></path></svg>Questões relacionadas ao CadÚnico</div>
+</div>
+<a class="btn" href="#contato">Falar sobre BPC/LOAS</a>
+<p class="note">A idade é um dos requisitos, mas não garante o benefício por si só. Por isso cada situação é analisada individualmente.</p>
+</div>
+</div>
+</section>
+
+<section class="mat" id="maternidade">
+<span class="blob blob-gold" aria-hidden="true" style="width: 460px; height: 460px; right: 6%; top: 18%"></span>
+<div class="wrap mat-grid">
+<div class="mat-copy rv">
+<h2>Teve um bebê ou adotou uma criança?</h2>
+<p class="txt">O salário-maternidade pode envolver diferentes situações, inclusive casos em que a mãe estava desempregada, trabalhava como autônoma ou MEI, exercia atividade rural ou teve o benefício negado.</p>
+<ul class="rows">
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M9.8 12.8l4.4 4.4M14.2 12.8l-4.4 4.4"></path></svg>Benefício negado</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12.5h18"></path></svg>Desempregada no período do nascimento</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5L5.5 4h13L20 9.5M4.5 9.5V20h15V9.5M10 20v-5h4v5M4 9.5a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0"></path></svg>MEI ou autônoma</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9M12 12C12 8 9 5 4.5 5c0 4 3 7 7.5 7zM12 14.5c0-3.2 2.5-5.5 7-5.5 0 3.3-2.5 5.5-7 5.5z"></path></svg>Trabalhadora rural</li>
+<li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 11L12 4l8.5 7v8.5a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z"></path><path d="M12 17.5s-3-1.8-3-3.7a1.6 1.6 0 0 1 3-.9 1.6 1.6 0 0 1 3 .9c0 1.9-3 3.7-3 3.7z"></path></svg>Adoção ou guarda judicial</li>
+</ul>
+<a class="btn" href="#contato">Quero analisar minha situação</a>
+</div>
+<div class="mv rv">
+<div class="mv-frame"><img src="assets/maternidade.jpg" alt="Mãe de olhos fechados com o bebê recém-nascido no colo"></div>
+<div class="badge" aria-hidden="true">
+<svg class="rot" viewBox="0 0 200 200"><defs><path id="badgeCirc" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"></path></defs><text><textPath href="#badgeCirc" textLength="470">SALÁRIO-MATERNIDADE • ORIENTAÇÃO JURÍDICA •</textPath></text></svg>
+<svg class="ic" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"></path></svg>
+</div>
+</div>
+</div>
+</section>
+
+<section class="neg" id="negativa">
+<div class="wrap">
+<div class="neg-top">
+<div class="rv">
+<h2>Recebeu uma negativa do INSS?</h2>
+<p class="txt">A negativa não deve ser analisada apenas pelo resultado final. O motivo apresentado pelo INSS, os documentos disponíveis e as circunstâncias de cada caso são importantes para definir quais caminhos podem ser avaliados.</p>
+</div>
+<div class="illus" role="img" aria-label="Ilustração de uma carta de decisão com o motivo destacado e um celular com a lista de documentos do caso">
+<div class="doc">
+<div class="doc-top"><span class="doc-seal"></span><div style="flex-grow: 1"><span class="bar w40"></span><span class="bar w25" style="margin-bottom: 0"></span></div></div>
+<p class="doc-title">Comunicado de decisão</p>
+<span class="bar w90"></span><span class="bar w80"></span><span class="bar w85"></span>
+<p class="doc-hl"><mark>Motivo da decisão</mark></p>
+<span class="bar w75"></span><span class="bar w60"></span>
+<span class="bar w30" style="margin-top: 22px; margin-bottom: 0"></span>
+</div>
+<div class="phone">
+<span class="phone-notch"></span>
+<p class="phone-title">Documentos do caso</p>
+<div class="ck ck1"><span class="ck-box"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Carta de decisão</div>
+<div class="ck ck2"><span class="ck-box"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Documentos pessoais</div>
+<div class="ck ck3"><span class="ck-box"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>Comprovantes</div>
+<div class="prog"><span></span></div>
+</div>
+</div>
+</div>
+<ol class="steps rv" style="list-style: none; padding: 0">
+<li class="st"><div class="st-top"><span class="st-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h4"></path><path d="M14 3v5h5v3"></path><circle cx="16" cy="16" r="3"></circle><path d="M18.2 18.2L21 21"></path></svg></span><span class="st-n">Etapa 1</span></div><h3>Entenda o motivo da negativa</h3></li>
+<li class="st"><div class="st-top"><span class="st-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7a2 2 0 0 1 2-2h4l2 2.5h7a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"></path><path d="M8 13h8M8 16h5"></path></svg></span><span class="st-n">Etapa 2</span></div><h3>Reúna os documentos</h3></li>
+<li class="st"><div class="st-top"><span class="st-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M8 20h8M5 7.5h14M5 7.5l-2.5 5.5a2.5 2.5 0 0 0 5 0zM19 7.5l-2.5 5.5a2.5 2.5 0 0 0 5 0z"></path></svg></span><span class="st-n">Etapa 3</span></div><h3>Analise a situação</h3></li>
+<li class="st st-last"><div class="st-top"><span class="st-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M12 5.5h6l2.5 2.5-2.5 2.5h-6M12 12.5H6l-2.5 2.5L6 17.5h6"></path></svg></span><span class="st-n">Etapa 4</span></div><h3>Verifique as possibilidades jurídicas</h3></li>
+</ol>
+<div class="neg-foot rv">
+<p>Cada caso tem particularidades. A análise serve para entender a situação e avaliar os caminhos possíveis, sem promessa de resultado.</p>
+<a class="btn btn-gold" href="#contato">Falar com um advogado</a>
+</div>
+</div>
+</section>
+
+<section class="how" id="como-funciona">
+<div class="wrap">
+<div class="sec-head rv" style="margin-bottom: 0">
+<h2>Como funciona</h2>
+<p class="lead-sm">Um caminho simples, do primeiro contato à orientação sobre o seu caso.</p>
+</div>
+<div class="how-grid">
+<span class="how-track" aria-hidden="true"><span class="how-dot"></span></span>
+<div class="how-item rv"><div class="how-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"></path></svg><b>01</b></div><h3>Você entra em contato</h3><p>Conte brevemente o que aconteceu.</p></div>
+<div class="how-item rv"><div class="how-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7a2 2 0 0 1 2-2h4l2 2.5h7a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"></path><circle cx="12" cy="13" r="2.6"></circle><path d="M14 15l2 2"></path></svg><b>02</b></div><h3>O caso é analisado</h3><p>São avaliadas as informações e os documentos apresentados.</p></div>
+<div class="how-item rv"><div class="how-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M12 5.5h6l2.5 2.5-2.5 2.5h-6M12 12.5H6l-2.5 2.5L6 17.5h6"></path></svg><b>03</b></div><h3>Você recebe orientação</h3><p>Com base na análise, são explicados os caminhos possíveis para a situação.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sobre" id="sobre">
+<div class="wrap sobre-grid">
+<div class="portrait rv">
+<img src="assets/logo-light.png" alt="Carlos Aiello Advocacia">
+</div>
+<div class="sobre-copy rv">
+<h2>Sobre o escritório</h2>
+<p class="txt">O escritório Carlos Aiello Advocacia atua na orientação jurídica de pessoas idosas e de suas famílias em pedidos de BPC/LOAS, e de mães em situações relacionadas ao salário-maternidade.</p>
+<p class="txt">Cada atendimento começa pela escuta. A partir do relato e dos documentos, a situação é analisada com atenção e os caminhos possíveis são explicados em linguagem simples, para que a pessoa e a família entendam cada etapa.</p>
+<div class="sobre-meta">
+<span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"></path></svg>Dr. Carlos Aiello</span>
+<span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"></path></svg>Atendimento pelo WhatsApp</span>
+<span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M8 20h8M5 7.5h14M5 7.5l-2.5 5.5a2.5 2.5 0 0 0 5 0zM19 7.5l-2.5 5.5a2.5 2.5 0 0 0 5 0z"></path></svg>BPC/LOAS e salário-maternidade</span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="faq" id="duvidas">
+<div class="wrap faq-grid">
+<div class="faq-side rv">
+<h2>Dúvidas frequentes</h2>
+<p>Respostas gerais e informativas. A situação de cada pessoa depende de análise individual.</p>
+<a class="btn" href="#contato">Falar com um advogado</a>
+</div>
+<div class="faq-list">
+<div class="faq-item is-open">
+<h3 class="faq-q"><button type="button" class="faq-btn" aria-expanded="true" aria-controls="faq-a-0"><span>Quem pode solicitar o BPC/LOAS para pessoa idosa?</span><span class="faq-pm" aria-hidden="true"></span></button></h3>
+<div class="faq-a" id="faq-a-0" aria-hidden="false"><div class="faq-a-in"><p>O BPC é um benefício assistencial previsto na Lei Orgânica da Assistência Social (LOAS). Para a pessoa idosa, a lei exige 65 anos ou mais e renda familiar por pessoa dentro do limite previsto, entre outros requisitos, como a inscrição atualizada no CadÚnico. Não é necessário ter contribuído para o INSS.</p></div></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-1"><span>Quem tem 65 anos já possui direito automático ao BPC?</span><span class="faq-pm" aria-hidden="true"></span></button></h3>
+<div class="faq-a" id="faq-a-1" aria-hidden="true"><div class="faq-a-in"><p>Não. A idade é apenas um dos requisitos. Também são analisadas a renda e a composição do grupo familiar, a situação no CadÚnico e outros pontos. Por isso cada caso precisa de avaliação individual.</p></div></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-2"><span>Meu pedido de BPC foi negado. O que posso fazer?</span><span class="faq-pm" aria-hidden="true"></span></button></h3>
+<div class="faq-a" id="faq-a-2" aria-hidden="true"><div class="faq-a-in"><p>O primeiro passo é entender o motivo informado pelo INSS na decisão. Dependendo do caso, pode ser avaliado um recurso administrativo, um novo pedido com documentação complementar ou a via judicial. A escolha depende das particularidades de cada situação.</p></div></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-3"><span>O BPC pode ser suspenso ou cessado?</span><span class="faq-pm" aria-hidden="true"></span></button></h3>
+<div class="faq-a" id="faq-a-3" aria-hidden="true"><div class="faq-a-in"><p>Sim. O benefício passa por revisões e pode ser suspenso ou cessado, por exemplo, quando o INSS entende que houve mudança na renda familiar ou quando há pendência de atualização cadastral. Nesses casos, é importante verificar o motivo e os prazos informados.</p></div></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-4"><span>Quem estava desempregada quando o bebê nasceu pode ter direito ao salário-maternidade?</span><span class="faq-pm" aria-hidden="true"></span></button></h3>
+<div class="faq-a" id="faq-a-4" aria-hidden="true"><div class="faq-a-in"><p>Pode, dependendo da situação. Após o fim das contribuições, a pessoa mantém a qualidade de segurada do INSS por um período, que varia conforme o histórico. É preciso analisar as datas e as contribuições de cada caso.</p></div></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-5"><span>MEI ou autônoma pode ter direito ao salário-maternidade?</span><span class="faq-pm" aria-hidden="true"></span></button></h3>
+<div class="faq-a" id="faq-a-5" aria-hidden="true"><div class="faq-a-in"><p>Pode, desde que mantenha a condição de segurada do INSS. As exigências para esse benefício passaram por mudanças de entendimento nos últimos anos, por isso vale analisar o histórico de contribuições de cada caso.</p></div></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-6"><span>Trabalhadora rural pode ter direito ao salário-maternidade?</span><span class="faq-pm" aria-hidden="true"></span></button></h3>
+<div class="faq-a" id="faq-a-6" aria-hidden="true"><div class="faq-a-in"><p>Pode. A trabalhadora rural que atua em regime de economia familiar pode ter direito mesmo sem contribuições mensais, desde que comprove o exercício da atividade rural. A documentação que demonstra esse trabalho costuma ser um ponto central da análise.</p></div></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-a-7"><span>O salário-maternidade pode ser negado pelo INSS?</span><span class="faq-pm" aria-hidden="true"></span></button></h3>
+<div class="faq-a" id="faq-a-7" aria-hidden="true"><div class="faq-a-in"><p>Sim. A negativa pode envolver, por exemplo, falta de documentos, questões sobre a condição de segurada ou divergências no cadastro do INSS. Uma negativa não encerra necessariamente a questão: o motivo pode ser analisado para avaliar os caminhos possíveis.</p></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="cta" id="contato">
+<span class="cta-glow" aria-hidden="true"></span>
+<img class="cta-mono" src="assets/monogram.png" alt="" aria-hidden="true">
+<div class="wrap cta-grid">
+<div class="cta-copy rv">
+<h2>Quer entender a sua situação?</h2>
+<p class="txt">Envie seus dados para entrar em contato com a equipe e apresentar o seu caso.</p>
+</div>
+<form class="form rv" id="lead-form" novalidate>
+<p class="form-title">Fale com a equipe</p>
+<div class="field">
+<label for="f-nome">Nome</label>
+<div class="inp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"></path></svg><input id="f-nome" type="text" autocomplete="name" placeholder="Seu nome" name="nome" required></div>
+</div>
+<div class="field">
+<label for="f-whats">WhatsApp</label>
+<div class="inp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><path d="M11 18.5h2"></path></svg><input id="f-whats" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(11) 90000-0000" name="whatsapp" required></div>
+</div>
+<p class="erro" id="erro" role="alert" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" style="width: 18px; height: 18px"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5.5M12 16.5h.01"></path></svg><span id="erro-txt"></span></p>
+<button type="submit" class="btn btn-gold btn-wa" id="enviar">
+<svg class="wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+Falar com um advogado
+</button>
+<p class="form-legal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"></rect><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"></path></svg><span>Ao enviar, você concorda em ser contatado pela equipe do escritório pelo WhatsApp informado.</span></p>
+</form>
+</div>
+</section>
+
+</main>
+
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-grid">
+<div>
+<img class="ftr-logo" src="assets/logo-light.png" alt="Carlos Aiello Advocacia">
+<p class="ftr-disc">As informações desta página têm caráter informativo e não substituem a análise individual de cada caso.</p>
+</div>
+<div>
+<h4>Navegação</h4>
+<div class="ftr-links">
+<a href="#bpc">BPC/LOAS para idosos</a>
+<a href="#maternidade">Salário-maternidade</a>
+<a href="#como-funciona">Como funciona</a>
+<a href="#duvidas">Dúvidas frequentes</a>
+</div>
+</div>
+<div>
+<h4>Atendimento</h4>
+<p><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"></path></svg>Pelo WhatsApp, após o envio do formulário</p>
+<p><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"></path></svg>Dr. Carlos Aiello</p>
+<a class="btn btn-gold" href="#contato" style="margin-top: 14px; min-height: 46px; padding: 0 22px; font-size: 14px">Falar com um advogado</a>
+</div>
+</div>
+<div class="ftr-bottom">
+<span>© 2026 Carlos Aiello Advocacia. Todos os direitos reservados.</span>
+<span>BPC/LOAS para idosos e salário-maternidade em São Paulo</span>
+</div>
+</div>
+</footer>
+
+<div class="sticky" id="sticky">
+<a class="btn btn-gold" href="#contato">Falar com um advogado</a>
+</div>
+
+</div>
+
+<script>
+(function(){
+  var SUPABASE_URL = 'https://qxhnjzyhtllmtdrcyygi.supabase.co';
+  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF4aG5qenlodGxsbXRkcmN5eWdpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIyMzczNjgsImV4cCI6MjA5NzgxMzM2OH0.DWf4I_x9F--H7ZZHUt_n4V3B__Nlsf1jNZdUV0vNBLU';
+  var SITE = 'carlos-aiello';
+
+  function sbInsert(table, row){
+    return fetch(SUPABASE_URL + '/rest/v1/' + table, {
+      method: 'POST', keepalive: true,
+      headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': 'Bearer ' + SUPABASE_ANON_KEY, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
+      body: JSON.stringify(row)
+    });
+  }
+
+  // Origem do acesso (primeiro toque na sessão)
+  function detectarOrigem(){
+    var p = new URLSearchParams(location.search);
+    var src = (p.get('utm_source') || '').toLowerCase();
+    if (p.get('gclid') || p.get('gbraid') || p.get('wbraid') || p.get('gad_source') || src === 'google') return 'google-ads';
+    if (p.get('fbclid') || ['facebook','fb','instagram','ig','meta'].indexOf(src) > -1) return 'meta-ads';
+    if (src) return src;
+    try { if (document.referrer) { var h = new URL(document.referrer).hostname.replace(/^www\./,''); if (h && h !== location.hostname) return h; } } catch(e){}
+    return null;
+  }
+  var origem = detectarOrigem();
+  try {
+    if (origem) sessionStorage.setItem('ca_origem', origem);
+    else origem = sessionStorage.getItem('ca_origem') || 'direto';
+  } catch(e){ origem = origem || 'direto'; }
+
+  // 1 visita por carregamento de página
+  sbInsert('lp_visits', { site: SITE, referrer: document.referrer || null, path: location.pathname + location.search }).catch(function(){});
+
+  // Menu mobile
+  var hdr = document.getElementById('hdr');
+  var burger = document.getElementById('burger');
+  var panel = document.getElementById('mnav-panel');
+  function setMenu(open){
+    hdr.classList.toggle('menu-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    panel.hidden = !open;
+  }
+  burger.addEventListener('click', function(){ setMenu(panel.hidden); });
+  document.querySelectorAll('[data-close-menu]').forEach(function(a){ a.addEventListener('click', function(){ setMenu(false); }); });
+
+  // Header ao rolar + CTA fixo no mobile
+  var sticky = document.getElementById('sticky');
+  var contato = document.getElementById('contato');
+  function onScroll(){
+    var y = window.scrollY || document.documentElement.scrollTop;
+    hdr.classList.toggle('is-scrolled', y > 24);
+    var nearForm = contato.getBoundingClientRect().top < window.innerHeight * 0.95;
+    sticky.classList.toggle('is-on', y > 560 && !nearForm);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // FAQ
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var btn = item.querySelector('.faq-btn');
+    btn.addEventListener('click', function(){
+      var abrir = !item.classList.contains('is-open');
+      document.querySelectorAll('.faq-item.is-open').forEach(function(o){
+        o.classList.remove('is-open'); o.querySelector('.faq-btn').setAttribute('aria-expanded','false'); o.querySelector('.faq-a').setAttribute('aria-hidden','true');
+      });
+      if (abrir){ item.classList.add('is-open'); btn.setAttribute('aria-expanded','true'); item.querySelector('.faq-a').setAttribute('aria-hidden','false'); }
+    });
+  });
+
+  // Formulário
+  var form = document.getElementById('lead-form');
+  var inNome = document.getElementById('f-nome');
+  var inWhats = document.getElementById('f-whats');
+  var erro = document.getElementById('erro');
+  var erroTxt = document.getElementById('erro-txt');
+  var btn = document.getElementById('enviar');
+  function mask(v){
+    var d = String(v || '').replace(/\D/g,'').slice(0,11);
+    if (!d.length) return '';
+    if (d.length <= 2) return '(' + d;
+    if (d.length <= 6) return '(' + d.slice(0,2) + ') ' + d.slice(2);
+    if (d.length <= 10) return '(' + d.slice(0,2) + ') ' + d.slice(2,6) + '-' + d.slice(6);
+    return '(' + d.slice(0,2) + ') ' + d.slice(2,7) + '-' + d.slice(7);
+  }
+  inWhats.addEventListener('input', function(){ inWhats.value = mask(inWhats.value); erro.hidden = true; });
+  inNome.addEventListener('input', function(){ erro.hidden = true; });
+  function mostrarErro(msg){ erroTxt.textContent = msg; erro.hidden = false; }
+
+  var enviando = false;
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    if (enviando) return;
+    var nome = inNome.value.trim().replace(/\s+/g,' ');
+    var digitos = inWhats.value.replace(/\D/g,'');
+    if (nome.length < 2){ mostrarErro('Informe seu nome para continuar.'); inNome.focus(); return; }
+    if (digitos.length < 10){ mostrarErro('Informe um WhatsApp válido, com DDD.'); inWhats.focus(); return; }
+    enviando = true; btn.disabled = true; btn.lastChild.textContent = ' Enviando...';
+    try { sessionStorage.setItem('ca_nome', nome); } catch(e){}
+    var timeout = new Promise(function(r){ setTimeout(r, 4000); });
+    Promise.race([ sbInsert('lp_leads', { site: SITE, nome: nome, whatsapp: digitos, origem: origem }).catch(function(){}), timeout ])
+      .then(function(){ location.href = 'redirect.html'; });
+  });
+})();
+</script>
+</body>
+</html>
